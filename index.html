@@ -5849,14 +5849,23 @@ body {
         position: relative; } }
 
 .page {
-
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 100vh; }
+    height: 100vh;
+    padding-top: 50px;
+}
 .page-header {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    height: 50px;
+    background: blue;
+
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -5867,7 +5876,8 @@ body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     overflow: hidden;
-    height: 100%; }
+    height: 100%;
+}
 .page main,
 .page ui-view {
     display: block;
@@ -21282,7 +21292,7 @@ ul.basic-content__list {
 <div class="page">
     <div class="page-header">
         <div style="background: red;">
-            <h1>header</h1>
+            <h1 style="margin-bottom: 0">header</h1>
         </div>
     </div>
     <div class="page-body">
